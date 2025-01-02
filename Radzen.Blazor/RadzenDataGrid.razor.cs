@@ -2976,6 +2976,12 @@ namespace Radzen.Blazor
             await EditRowInternal(item);
         }
 
+	/// <summary>
+	/// Allow to define  data source as OData 
+	/// </summary>
+	[Parameter]
+	public bool? IsODataSource { get => isOData; set => isOData =value; }
+
 
         bool? isOData;
 
